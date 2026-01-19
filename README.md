@@ -8,7 +8,9 @@ get the new Fast
 这是一个简单的 FastAPI 服务，用于检查 API 响应是否为空。
 
 run with command : uvicorn main:app --reload
+
 Swagger UI: http://localhost:8000/docs
+
 ReDoc: http://localhost:8000/redoc
 
 ## 主要特性
@@ -23,6 +25,8 @@ ReDoc: http://localhost:8000/redoc
 ### 1. 服务信息
 GET /
 
+GET /api/empty
+
 ### 2. 健康检查
 GET /api/health
 
@@ -35,6 +39,3 @@ POST /api/check-empty
   "check_empty": true,
   "timeout": 1000
 }
-‘’‘
-
-GET /api/empty
